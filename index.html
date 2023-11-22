@@ -1,44 +1,63 @@
-<html>
-<head>
-<style>
-.all-browsers {
-  margin: 0;
-  padding: 5px;
-  background-color: lightgray;
-}
+<!DOCTYPE html>
+<title> WEB - Welcome</title>
+<link rel="stylesheet" href="style.css">
+<main>
 
-.all-browsers > h1, .browser {
-  margin: 10px;
-  padding: 5px;
-}
+<header class ="header">
+<body id="mom">   
+    <p id = "headtitle">2303125 김규노 포트폴리오</p>
+    <p id = "headtitle2">군산대학교 소프트웨어학과</p>
+<br>
+<hr class="cline">
+</header>
 
-.browser {
-  background: white;
-}
+<span id = "grid">
+    
+<h1>PORTFOLIO</h1>
+<h4>KIMKYUNO</h4>
 
-.browser > h2, p {
-  margin: 4px;
-  font-size: 90%;
-}
-</style>
-</head>
-<body>
+</span>
 
-<article class="all-browsers">
-  <h1>Most Popular Browsers</h1>
-  <article class="browser">
-    <h2>Google Chrome</h2>
-    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
-  </article>
-  <article class="browser">
-    <h2>Mozilla Firefox</h2>
-    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
-  </article>
-  <article class="browser">
-    <h2>Microsoft Edge</h2>
-    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
-  </article>
-</article>
-
+<hr class="cline">
+<ol>
+    <li><a href = "1.html">프로필</a></li>
+    <li><a target="_blank" href = "https://eclass.kunsan.ac.kr/">군산대학교eclass</a></li>
+    <li><a target="_blank" href = "https://eclass.kunsan.ac.kr/">향후계획</a></li>
+</ol>
 </body>
-</html>
+
+<script>
+    function setColor(color){
+        var alist = document.querySelectorAll('a')
+        var i = 0;
+        while (i < alist.length) {
+            alist[i].style.color = color;
+            i = i + 1;
+        }
+    };
+</script>
+
+<footer>
+    
+<input class="custom-btn btn-16" type="button" id ='NIGHT_DAY'value="NIGHT" margin = "20dp" onclick="
+    if(document.querySelector('#NIGHT_DAY').value === 'NIGHT'){
+    document.querySelector('#mom').style.backgroundColor = 'black';
+    document.querySelector('#mom').style.color = 'white';
+    document.querySelector('#NIGHT_DAY').value = 'day';
+
+        setColor('powderblue');
+    } else{
+    document.querySelector('#mom').style.backgroundColor = 'white';
+    document.querySelector('#mom').style.color = 'black';
+    document.querySelector('#NIGHT_DAY').value = 'NIGHT'
+
+        setColor('black');
+    }
+"/>  
+
+<a target="_blank" href = "https://github.com/kimkno"><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
+
+<a target="_blank" href = "https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">   
+</footer>
+
+</main>
