@@ -21,9 +21,16 @@
     grid-template-columns: 1fr 100px;  
     height: 350px;
 }
+#grid2{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
 h1{
-    font-size: 100px;
+    
+    font-size: 125px;
     color: #7DA7CD;
+    margin-left: 30px; 
+    margin-top: 100px; 
 }
 .profile{
     font-size: 25;
@@ -31,14 +38,20 @@ h1{
 
 body { 
     min-height: 100vh; 
-    margin: 5px;
+    margin: 15px;
 }
 
 ol{
     border-right: 1px solid gray;
     width: 100px;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 5px;
+}
+article{
+    padding-left: 60px;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px;  
 }
 
 
