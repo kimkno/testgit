@@ -1,89 +1,153 @@
 <!DOCTYPE html>
 <title> WEB - Welcome</title>
-<link rel="stylesheet" href="style.css">
-<main>
 
-<header class ="header">
-<body id="mom">   
-    <p id = "headtitle">2303125 김규노 포트폴리오</p>
-    <p id = "headtitle2">군산대학교 소프트웨어학과</p>
-<br>
-<hr class="cline">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script 
+        src="https://kit.fontawesome.com/1c5ff97907.js"
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="main.js" defer>
+    </script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+      
+  
+<body>   
+
+<header>
+    <nav class="navbar">
+        
+        <div class="navbar__logo">
+            <i class="fa-solid fa-cloud"></i>
+            <a href="#">나만의 포트폴리오 만들기</a>
+        </div>
+
+        <ul class="navbar__menu">
+            <li><a href="#tag1">Home</a></li>
+            <li><a href="#tag2">Portfolio</a></li>
+            <li><a href="#tag3">ToDo</a></li>
+        </ul>
+
+        <ul class="navbar__items">
+            <li><a target="_blank" href = "https://github.com/kimkno">
+                <i class="fa-brands fa-github"></i>
+            </a></li>
+            <li><a target="_blank" href = "https://www.python.org/">
+                <i class="fa-brands fa-python"></i>
+            </a></li>
+        </ul>
+        <a href="#" class="navbar__togglBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
 </header>
 
-<span id = "grid">
-    
-<h1>PORTFOLIO</h1>
-<h4>KIMKYUNO</h4>
+<main>
+    <div class="content", id="tag1">
+        <span id ="grid">
+            <h1 id="sang">PORTFOLIO</h1>
+            <h4>KIMKYUNO</h4>
+        </span>
+        <a ></a>
+        <section class="rock" id="tag2"> 
+            <br><br><br><br><br>
+            <div class="container  pretty-scrollbar  js-horizontal-scroll">
+                <img src="https://picsum.photos/300/331" alt="">
+                <img src="https://picsum.photos/300/332" alt="">
+                <img src="https://picsum.photos/300/333" alt="">
+                <img src="https://picsum.photos/300/334" alt="">
+                <img src="https://picsum.photos/300/335" alt="">
+                <img src="https://picsum.photos/300/336" alt="">
+                <img src="https://picsum.photos/300/337" alt="">
+                <img src="https://picsum.photos/300/338" alt="">
+                <img src="https://picsum.photos/300/339" alt="">
+            </div>
 
-</span>
+            <ul class="profile">
+                <br>
+                <li>
+                  이름 : 김규노<br>
+                  학력 : 군산대학교 소프트웨어학과<br>
+                  수료 내역 : --<br>
+                  경력 사항 : --<br>
+                </li>
+                <br>
+                <li>
+                  자격증 : --<br>
+                  수상 내역 : --<br>
+                </li>
+                <br>
+                <li>
+                  사회 경험 : --<br>
+                  전시회 : --<br>
+                </li>
+                <br>
+                <li>
+                  연락처 : --<br>
+                  이메일 : --<br>
+                  주소 : --<br>
+                </li>
+                <br>
+                <li>
+                  게임 개발 : 
+                  <button class="button btnFade btnLightBlue" onclick="openModal()">가위 바위 보</button>
+                    <div id="myModal" class="modal">
+                    
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                                <section id="rock">    
+                                    <h1>가위바위보 게임</h1>
+                                    <br><br>
+                                    <div id="computer"></div>
+                                    <div>
+                                        <button id="rock" class="btn">가위</button>
+                                        <button id="scissor" class="btn">바위</button>
+                                        <button id="paper" class="btn">보</button>
+                                    </div>
+                                    <br>
+                                    <div id="result"></div>
+                                    <br>
+                                    <button id="init">초기화</button>
+                                </section>
+                        </div>
+                    </div>
+                    <div id="myModal" class="modal">
+                    <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    </div>
+                    </div>
+                    <button class="button btnFade btnLightBlue" >플래시 게임 </button>
+                </li>
+            </ul>
+                
+            
+        </section>
 
-<hr class="cline">
-
-<div id = "grid2">    
-<ol>
-    <nav>
-    <li><a href = "1.html">프로필</a></li>
-    <br>
-    <li><a target="_blank" href = "https://eclass.kunsan.ac.kr/">군산대학교eclass</a></li>
-    <br>
-    <li><a target="_blank" href = "https://eclass.kunsan.ac.kr/">향후계획</a></li>
-    <br>
-    <li><a target="_blank" href = "">--</a></li>
-    <br>
-    </nav>
-</ol>
-<article>
-    ex)<br> 
-    포트폴리오(portfolio)는 본래 서류가방이나 서류집을 뜻하는 어휘이다. 
-    문서를 모아 휴대할 수 있는 꾸러미를 지칭하던 말로, 'port-'는 '가지고 다니다',
-    'folio'는 '잎사귀'에서 유래한 종이라는 뜻이다.
-     이러한 어원에서 파생되어 '(특히 심사 등 목적으로) 작품이나 성과 등의 경력을 정리한 자료집'이라는 의미가 탄생했다.<br>
-    예술 포트폴리오나 증권 포트폴리오 역시 말 그대로 가방에 작품을 모아 갖고 다니거나,
-    가방에 증권(종이)을 가지고 다니던 것에서 시작했다.<br>
-    이 의미가 너무 커져서 현대 와서는 갖고 다닌다는 
-    port의 의미를 살려 쓰는 경우는 많지 않고 그냥 한 사람이나 
-    제도의 방향을 나타내는 컬렉션 비스무리한 개념이 되었다.<br>
-    자신의 이력이나 경력 또는 실력 등을 알아볼 수 있도록 
-    자신이 과거에 만든 작품이나 관련 내용 등을 모아놓은 자료철 또는 자료 묶음, 작품집으로, 
-    실기와 관련된 경력증명서이다.<br>예술 분야에서 자신의 작업물을 타인에게 증명하기 위해 필수적이다.
-     대학 졸업 후 취직을 위해, 이직 시 등등 ------ 
-</article>
-</div>
+        <section class="todo" id="tag3">
+            <div id="grid2">    
+                <i class="fa-solid fa-database fa-2xl"> I Can Do</i>
+                    <img src="image/candoHTML.png", width="400px", height="150px">
+                
+                <i class="fa-solid fa-book-open fa-2xl"> To do</i>
+                    <img src="image/todoPyt.png", width="400px", height="150px">
+            </div>
+        </section>
+    </div>    
+</main>
 </body>
-
-<script>
-    function setColor(color){
-        var alist = document.querySelectorAll('a')
-        var i = 0;
-        while (i < alist.length) {
-            alist[i].style.color = color;
-            i = i + 1;
-        }
-    };
-</script>
+<br><br><br><br><br>
 
 <footer>
-    
-<input class="custom-btn btn-16" type="button" id ='NIGHT_DAY'value="NIGHT" margin = "20dp" onclick="
-    if(document.querySelector('#NIGHT_DAY').value === 'NIGHT'){
-    document.querySelector('#mom').style.backgroundColor = 'black';
-    document.querySelector('#mom').style.color = 'white';
-    document.querySelector('#NIGHT_DAY').value = 'day';
-
-        setColor('powderblue');
-    } else{
-    document.querySelector('#mom').style.backgroundColor = 'white';
-    document.querySelector('#mom').style.color = 'black';
-    document.querySelector('#NIGHT_DAY').value = 'NIGHT'
-
-        setColor('black');
-    }
-"/>  
-
-<a target="_blank" href = "https://github.com/kimkno"><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
-
-<a target="_blank" href = "https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">   
+    <address>
+        <a>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</a><br />
+        <a >© 2023 Kim Kyu No. All Rights Reserved.</a>
+    </address>
 </footer>
 
-</main>
+
